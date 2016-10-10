@@ -22,6 +22,10 @@ exports.seed = function(knex, Promise) {
         }),
         knex('shops_donuts').insert({
           shop_id:  knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          donut_id: knex('donuts').select('id').where('name', 'Boston Creme Donut')
+        }),
+        knex('shops_donuts').insert({
+          shop_id:  knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
           donut_id: knex('donuts').select('id').where('name', 'Jelly Donut')
         }),
         knex('shops_donuts').insert({

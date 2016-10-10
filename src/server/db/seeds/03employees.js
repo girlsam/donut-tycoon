@@ -10,183 +10,183 @@ exports.seed = function(knex, Promise) {
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 1,
-          favorite_donut: 6
+          shop_id: knex('shops').select('id').where('name', 'Funkin\' Gonuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Sugar-Coated Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 1,
-          favorite_donut: 5
+          shop_id: knex('shops').select('id').where('name', 'Funkin\' Gonuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Boston Creme Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 1,
-          favorite_donut: 3
+          shop_id: knex('shops').select('id').where('name', 'Funkin\' Gonuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Sugar-Coated Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 1,
-          favorite_donut: 4
+          shop_id: knex('shops').select('id').where('name', 'Funkin\' Gonuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Mystery Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 1,
-          favorite_donut: 5
+          shop_id: knex('shops').select('id').where('name', 'Funkin\' Gonuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Jelly Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 2,
-          favorite_donut: 5
+          shop_id: knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Jelly Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 2,
-          favorite_donut: 4
+          shop_id: knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Blueberry Coffee Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 2,
-          favorite_donut: 1
+          shop_id: knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          favorite_donut:  knex('donuts').select('id').where('name', 'Vanilla Walnut Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 2,
-          favorite_donut: 3
+          shop_id: knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Blueberry Coffee Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 2,
-          favorite_donut: 5
+          shop_id: knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Jelly Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 3,
-          favorite_donut: 6
+          shop_id: knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          favorite_donut:  knex('donuts').select('id').where('name', 'Vanilla Walnut Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 3,
-          favorite_donut: 1
+          shop_id: knex('shops').select('id').where('name', 'Dough Hole Donuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Vanilla Walnut Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 3,
-          favorite_donut: 2
+          shop_id: knex('shops').select('id').where('name', 'Dough Hole Donuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Vanilla Walnut Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 3,
-          favorite_donut: 2
+          shop_id: knex('shops').select('id').where('name', 'Dough Hole Donuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Blueberry Coffee Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 3,
-          favorite_donut: 2
+          shop_id: knex('shops').select('id').where('name', 'Dough Hole Donuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Vanilla Walnut Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 3,
-          favorite_donut: 5
+          shop_id: knex('shops').select('id').where('name', 'Dough Hole Donuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Blueberry Coffee Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 4,
-          favorite_donut: 6
+          shop_id: knex('shops').select('id').where('name', 'Dough Hole Donuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Blueberry Coffee Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 4,
-          favorite_donut: 2
+          shop_id: knex('shops').select('id').where('name', 'Stairway to Donuts'),
+          favorite_donut:  knex('donuts').select('id').where('name', 'Jelly Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 4,
-          favorite_donut: 4
+          shop_id: knex('shops').select('id').where('name', 'Stairway to Donuts'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Blueberry Coffee Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 4,
-          favorite_donut: 2
+          shop_id: knex('shops').select('id').where('name', 'Stairway to Donuts'),
+          favorite_donut:  knex('donuts').select('id').where('name', 'Jelly Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 4,
-          favorite_donut: 1
+          shop_id: knex('shops').select('id').where('name', 'Stairway to Donuts'),
+          favorite_donut:  knex('donuts').select('id').where('name', 'Jelly Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 4,
-          favorite_donut: 3
+          shop_id: knex('shops').select('id').where('name', 'Stairway to Donuts'),
+          favorite_donut:  knex('donuts').select('id').where('name', 'Sugar-Coated Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 4,
-          favorite_donut: 6
+          shop_id: knex('shops').select('id').where('name', 'Stairway to Donuts'),
+          favorite_donut:  knex('donuts').select('id').where('name', 'Sugar-Coated Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 2,
-          favorite_donut: 6
+          shop_id: knex('shops').select('id').where('name', 'Funkin\' Gonuts'),
+          favorite_donut:  knex('donuts').select('id').where('name', 'Boston Creme Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 1,
-          favorite_donut: 1
+          shop_id: knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Boston Creme Donut')
         }),
         knex('employees').insert({
           first_name: faker.name.firstName(),
           last_name: faker.name.lastName(),
           email: faker.internet.email(),
-          shop_id: 3,
-          favorite_donut: 4
+          shop_id: knex('shops').select('id').where('name', 'Sugar Coma Donut Factory'),
+          favorite_donut: knex('donuts').select('id').where('name', 'Boston Creme Donut')
         })
       ]);
     });
