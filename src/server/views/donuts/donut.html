@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<body>
+  <div class="container-fluid">
+    <!-- displays donuts -->
+    <h1 class="single-shop-header">Dig In!</h1>
+    <h1 class="single-donut-name">{{donuts[0].name}}</h1>
+    <h1 class="single-donut-description">{{donuts[0].topping}}</h1>
+    <h1 class="single-donut-description">${{donuts[0].price}}</h1>
+    <img class="single-donut" src={{donuts[0].image_url}} alt="Donut Image">
+    <div class="button-block text-center">
+    <br>
+      <a href="/donuts/{{donuts.id}}/edit" class="btn btn-success btn-xs">Edit Donut Details</a>
+      <a href="#" class="btn btn-warning btn-xs">Delete Donut</a>
+    </div>
+    <hr>
+    <!-- displays employees -->
+    <!-- edit/delete buttons -->
+    <!-- closing divs for boostrap container -->
+  </div>
+</body>
+
+{% endblock %}
