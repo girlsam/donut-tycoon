@@ -78,3 +78,27 @@ View Single Shop
   display: block;
   border-radius: 5px;
 }
+
+/*=====================
+View Single Donut
+=====================*/
+.single-donut {
+  width: 500px;
+  vertical-align: bottom;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.single-donut-name {
+  font-family: 'Questrial', Arial, sans-serif;
+  font-size: 34px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.single-donut-description {
+  font-family: 'Questrial', Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
