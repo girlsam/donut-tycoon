@@ -1,0 +1,80 @@
+/*=====================
+Nav Bar
+=====================*/
+#nav {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-family: 'Shrikhand', Arial, sans-serif;
+  color: white;
+}
+
+/*=====================
+View ALL Shops
+=====================*/
+
+.shop-header {
+  font-family: 'Questrial', Arial, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.shop-image {
+  width: 500px;
+  vertical-align: bottom;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.shop-name {
+  font-family: 'Shrikhand', Arial, sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+.city {
+  font-family: 'Questrial', Arial, sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+.thumbnail {
+  position: relative;
+  border-style: none;
+}
+
+.caption {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+}
+
+/*=====================
+View Single Shop
+=====================*/
+.single-shop-header {
+  font-family: 'Shrikhand', Arial, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.single-shop-city {
+  font-family: 'Questrial', Arial, sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+.donut-image {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}

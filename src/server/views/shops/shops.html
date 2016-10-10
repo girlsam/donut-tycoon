@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <h1 class="shop-header">Welcome to Booyah Donuts.
+      <br>
+      Visit All Our <strong>{{shops.length}}</strong> Locations!</h1>
+    </header>
+    <hr>
+    <div class="row">
+    {% for shop in shops %}
+      <div class="thumbnail text-center">
+        <a href="/shops/{{shop.id}}"><img class="shop-image img-responsive" src="{{shop.image_url}}"></a>
+        <div class="caption">
+          <div class="shop-name">{{shop.name}}</div>
+          <h3 class="city">{{shop.city}}</h3>
+        </div>
+      </div>
+      {% endfor %}
+    <!-- closing divs for boostrap container -->
+    </div>
+  </div>
+</body>
+
+{% endblock %}
